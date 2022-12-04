@@ -15,6 +15,16 @@
     <!--Autoplay is for playing the video automatically without the control buttons.-->
     
     <!-- <video src = "SampleVideo.mp4" width = "800" autoplay></video> -->
-    <video src = "SampleVideo.mp4" width = "800" controls></video> <!--Control attribute is used for the control the video, like play and pause.-->
+    
+    <!--Control attribute is used for the control the video, like play and pause.-->
+    <!--loop attribute is used for looping the video, the video will start from first after end of the video.-->
+    <!--muted attribute is used for mute the video initially and then you can unmute it using the button given in the video.-->
+    <!--poster attribute is like the thumbnail of youtube videos, it shows image on the video as a thumbnail.-->
+    <video src = "SampleVideo.mp4" width = "800" controls loop muted poster = "Screenshot (351).png"></video>
+
+    <!--iframe tag is used to embeded the video from someone's or our video-->
+    <!--for this go to the youtube.com and search for apna collage lecture 2 and in video click on share button and click on embeded, the youtube will automatically provide a iframe tag simply copy and paste in it to your html file.-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/2QR11oDukn4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe src = "https://www.apnikaksha.com" frameborder = "0" width = "500" height="600"></iframe>
 </body> 
 </html>
