@@ -26,7 +26,18 @@
         <p>Pincode: <input type = "number" name = "pincode" id = "pincode"></p>
         <hr>
         <h2>Payment Information</h2>
-        
+        <p>Card Type: 
+            <select name="card_type" id="card_type">
+                <option value="">--Select a Card Type--</option>
+                <option value="visa">Visa</option>
+                <option value="Mastercard">Mastercard</option>
+                <option value="Rupay">Rupay</option>
+            </select>
+        </p>
+        <p>Card Number <input type="number" name = "Card_number" id = "Card_number"></p>
+        <p>Expiration Date: <input type="date" name="exp_date" id="exp_date"></p>
+        <p>CVV: <input type="password" name = "cvv_num" id = "cvv_num"></p>
+        <input type = "submit" value = "PayNow"> <!--this is the button which will show user as a paynow.-->
     </form>
 </body>
 </html>
