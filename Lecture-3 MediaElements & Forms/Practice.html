@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Media Elements</title>
+</head>
+<body>
+    <h1>Payment Form</h1>
+    <p>Required fields are followed by *</p>
+    <h2>Contact Information</h2>
+    <p>Name: *<input type = "text" name = "name" required></p>
+    <fieldset>
+        <legend>Gender *</legend>
+        Male<input type = "radio" value = "Male" id = "male">
+        Female<input type = "radio" value = "Female" id = "female">
+        
+    </fieldset>
+    <p>Address: <textarea name = "address" id = "address" rows = "8" cols = "100"></textarea></p>
+    <p>Email: *<input type="email" name = "email" id = "email" required></p>
+    <p>Pincode: *<input type = "number" name = "pincode" id = "pincode"></p>
+    <hr>
+    <h2>Payment Information</h2>
+    <p>Card Type: *
+        <select>
+            <option>--Select a Card Type--</option>
+            <option>Visa</option>
+            <option>Mastercard</option>
+            <option>Rupay</option>
+        </select>
+    </p>
+    <p>Card Number: *<input type = "number" name = "card number" id = "card number" required></p>
+    <p>Expiration Date: *<input type = "date" name = "expiry" id = "exp"></p>
+    <p>CVV: *<input type = "password" name = "cvv" id = "cvv" required></p>
+    <input type = "submit" value = "PayNow">
+</body>
+</html>
