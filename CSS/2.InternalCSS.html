@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping list</title>
     <!--This is Internal CSS which can be accessed by style tag.-->
     <style>
-
+        /* This h2 is a Selector. */
+        h2{
+            color : brown
+        }
     </style>
 </head>
+
 <body>
+    <u>Harsh Pachani</u>
+    <!--Underlining the text-->
+    <hr />
     <h1>Welcome to Apni Kaksha</h1>
     <h2>Welcome to Apni Kaksha</h2>
     <h3>Welcome to Apni Kaksha</h3>
@@ -18,7 +25,43 @@
     <h5>Welcome to Apni Kaksha</h5>
     <h6>Welcome to Apni Kaksha</h6>
     <hr>
-    <!--write lorem for random text and if you want number of words in tag then simply write lorem(number of words), EX:- lorem100-->
-    <p> <b>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</b> <i>Aliquid repellendus officia suscipit eius ipsa ex culpa</i>, <small>nesciunt beatae qui non fuga</small> tempore 10 <sup>2</sup> and 10<sub>log2</sub> ab dignissimos ipsam, commodi exercitationem earum necessitatibus ullam.</p>
+    <h2>Unordered List.</h2>
+    <h2>Shopping List:</h2>
+    <!--<ul> stands for UNORDERED LIST-->
+    <ul>
+        <!--li stands for LIST ITEM-->
+        <li>Milk</li>
+        <li>Bread</li>
+        <li>Butter</li>
+        <li>Jam</li>
+        <li>Maggie</li>
+        <li>Brown Bread</li>
+        <li>Dabeli</li>
+    </ul>
+    
+    <hr>
+    <h2>Ordered list.</h2>
+    <h2>Maggie Recipe:</h2>
+    <!--<ol> tag stands for ORDERED LIST-->
+    <ol type = "A"> <!--Tupe is an attribute used to represent a list whether in number or in roman or in alphabatical order, Default is an alphabetical order.-->
+        <!--<li> Tag stands for LIST ITEM to list the items.-->
+        <li>Boil 1 and half Cups of Water</li>
+        <li>Break the noodle cake in half</li>
+        <li>Add the maggie masala</li>
+        
+        <!--USE of nested list here.-->
+        <li>Add some veggies like:- 
+            <ul>
+                <li>Peas</li>
+                <li>Carrot</li>
+                <li>Potatoes</li>
+                <li>Onion</li>
+            </ul>
+        </li>
+        <li>Cook for 2 minutes</li>
+        <li>And hamari tasty maggie ab taiyaar hai!!</li>
+    </ol>
+
+    <hr>
 </body>
 </html>
