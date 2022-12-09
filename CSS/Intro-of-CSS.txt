@@ -1,0 +1,4 @@
+Syntax of CSS
+Property: Values
+    -There are two Values 1.Defined
+                          2.PreDefined
