@@ -1,0 +1,4 @@
+/*Everything Selector or Universal Selector is used to select everything in an html document.*/
+*{
+    list-style-type: none;
+}
