@@ -1,0 +1,7 @@
+.special{
+    /*This is Class Selector Syntax:
+        .className {property : value; }    
+    */
+    color : orange;
+    font-weight: bold;
+}

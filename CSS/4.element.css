@@ -2,3 +2,7 @@ p, a{ /*This p and a is a selector*/
     /*syntax: selector{ property : value }*/
     color : green; /*color is a property and green is a value of that property*/
 }
+
+li{
+    list-style-type: square;
+}
