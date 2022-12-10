@@ -18,3 +18,9 @@ li.special{
 li em{
     color : rebeccapurple;
 }
+
+/*psudo class selector.*/
+a:hover{
+    color : saddlebrown;
+    text-decoration: none;
+}
