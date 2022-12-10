@@ -1,0 +1,4 @@
+/*Only those will selected in li tag which contains a class attribute.*/
+li[class]{
+    font-size: 300%;
+}
