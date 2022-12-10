@@ -2,6 +2,19 @@
     /*This is Class Selector Syntax:
         .className {property : value; }    
     */
+    color : green;
+    font-weight: bold;
+}
+
+/*If we want to change the color and font-weight of the particular tag.*/
+/*syntax tag.className{ property : value; }*/
+li.special{
     color : orange;
     font-weight: bold;
+}
+
+/*Descendent Combinator selector.*/
+/*We can select of one type element into the second type of element.*/
+li em{
+    color : rebeccapurple;
 }
