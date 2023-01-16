@@ -7,35 +7,41 @@
     <title>Payment_Form</title>
 </head>
 <body>
-    <h1>Payment Form</h1>
-    <p>Required fields are followed by *</p>
-    <h2>Contact Information</h2>
-    <p>Name: *<input type = "text" required name = "Name"></p>
+    <form action = "">
+        <h1>Payment Form</h1>
+        <p>Required fields are followed by *</p>
+        <h2>Contact Information</h2>
+        <p>Name: *<input type = "text" required name = "Name"></p>
 
-    <fieldset>
-        <legend>Gender *</legend>
-        <p>
-            Male<input type = "radio" name = "gender" id = "male" required>
-            Female<input type = "radio" name = "gender" id = "female" required>
+        <fieldset>
+            <legend>Gender *</legend>
+            <p>
+                Male<input type = "radio" name = "gender" id = "male" required>
+                Female<input type = "radio" name = "gender" id = "female" required>
+            </p>
+        </fieldset>
+
+        <p>Address: <textarea name = "Address" id = "Address" cols = "100" rows = "8"></textarea></p>
+
+        <p>Email: *<input type = "email" name = "email" id = "email" required></p>
+        <p>Pincode: *<input type = "number" name = "pincode" id = "pincode" required></p>
+
+        <hr>
+        <h2>Payment Information</h2>
+        <p>Card Type: *
+            <select name = "Card type" id = "Card type" required>
+                <option value = "">---Select a card---</option>
+                <option value="visa">Visa</option>
+                <option value="Mastercard">Mastercard</option>
+                <option value="Rupay">Rupay</option>
+            </select>
         </p>
-    </fieldset>
 
-    <p>Address: <textarea name = "Address" id = "Address" cols = "100" rows = "8"></textarea></p>
+        <p>Card Number: *<input type = "number" id = "number" name = "number" required></p>
+        <p>Expiry Date: *<input type = "date" name = "date" id = "date" required></p>
+        <p>CVV: *<input type = "password" id = "cvv" name = "cvv"></p>
 
-    <p>Email: *<input type = "email" name = "email" id = "email" required></p>
-    <p>Pincode: *<input type = "number" name = "pincode" id = "pincode" required></p>
-
-    <hr>
-    <h2>Payment Information</h2>
-    <p>Card Type: *
-        <select name = "Card type" id = "Card type" required>
-            <option value = "">---Select a card---</option>
-            <option value="visa">Visa</option>
-            <option value="Mastercard">Mastercard</option>
-            <option value="Rupay">Rupay</option>
-        </select>
-    </p>
-
-    
+        <input type = "submit" value = "PayNow!">
+    </form>
 </body>
 </html>
