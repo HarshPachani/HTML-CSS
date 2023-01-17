@@ -1,6 +1,33 @@
-p{
+/* p{
     color: green;
 }
 p a{
     color: blue;
+} */
+.special{
+    color: green;
+    font-weight: bold;
+}
+
+li.special{
+    color: orange;
+    font-weight: bold;
+}
+li em{
+    color:rebeccapurple;
+}
+
+/*Id selector*/
+#header1 {
+    color: red;
+    background-color: black;
+}
+
+/*Attribute Selector*/
+li[class]{
+    font-size: 300%;
+}
+
+li[class = "a"]{
+    color: royalblue;
 }
