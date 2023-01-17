@@ -1,0 +1,4 @@
+nav a{
+    /*When we create a link then we remove the text decoration (i.e. Underline)*/
+    text-decoration: none;
+}
