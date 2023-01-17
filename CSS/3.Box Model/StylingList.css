@@ -1,4 +1,21 @@
 nav a{
     /*When we create a link then we remove the text decoration (i.e. Underline)*/
     text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: 20px; /*Spacing between anchor (<a tag>) tags {i.e. Home, college Reviews, Courses}*/
+    float: left; /*for increase height of nav bar.*/
+}
+
+nav{
+    background-color: black;
+    overflow: hidden;
+}
+
+nav a:hover{
+    color: tomato; /*for changing the color of the anchor tag element when we hover our mouse on it.*/
+}
+
+nav a:visited{
+    color: royalblue; /*for changing the color if link is visited or not.*/
 }
