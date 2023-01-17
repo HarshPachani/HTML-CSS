@@ -1,0 +1,14 @@
+table, tr, th, td{
+    border: 2px solid black;
+    border-collapse: collapse; /*For merging cell as one*/
+    padding: 10px;
+    border-spacing: 5px;
+}
+
+th{
+    background-color: coral;
+}
+
+td{
+    background-color: cornflowerblue;
+}
