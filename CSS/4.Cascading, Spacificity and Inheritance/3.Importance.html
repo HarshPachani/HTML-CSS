@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Importance of Important</title>
+    <style>
+
+        /*As the rule of specificity the inline CSS attribute's specificity is higher than internal or external css
+        And here we inlined the CSS in p tag and the red color will be applied instead of blue color because of high specificity of inline Css more than internal CSS*/
+
+        /*But if we add !important keyword into the internal CSS then the specificity will be high of internal css and internal CSS's property will be applied(which is blue).*/
+        .important{
+            color: blue !important;
+        }
+    </style>
+
+</head>
+<body>
+    <p class = "important" style = "color: red;">This is a red color</p>
+</body>
+</html>
