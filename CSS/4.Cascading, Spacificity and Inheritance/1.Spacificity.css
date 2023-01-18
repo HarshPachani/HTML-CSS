@@ -1,0 +1,14 @@
+
+/*Here Spacificity of every selector matters, hover on to the selector for knowing the spacificity*/
+/*spacificity of this selector is (1,1,2)*/
+ul#Summer-drinks li.favourite{
+    color: red;
+    font-weight: bold;
+}
+
+/*Specificity of this Selector is (1,0,2)*/
+ul#Summer-drinks li{
+    font-size: 12px;
+    color: black;
+    font-weight: normal;
+}
