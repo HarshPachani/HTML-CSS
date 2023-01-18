@@ -1,0 +1,57 @@
+*{ /*This is an Universal selector and box-sizing: border-box means the parent box size will be applied for size.*/
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 15px 30px;
+    font-size: 17px;
+    padding: 8px;
+}
+
+.container{
+    background-color: #f2f2f2;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgray;
+    border-radius: 4px; /*This will give a curve to the corners.*/
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="date"],
+select,
+textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+fieldset{
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+.p{
+    text-align: right;
+}
+.main_heading{
+    text-align: center; /*To align a text(Payment Form) to the center*/
+}
+
+input[type="submit"]{
+    background-color: #4daea1;
+    color:white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;/*to change the state of the cursor when we hover on a button.*/
+    width: 100%;
+}
+
+input[type="submit"]:hover{
+    background-color: #4caf84;
+}

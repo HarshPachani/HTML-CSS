@@ -5,39 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payment Form with CSS</title>
+
+    <link rel = "stylesheet" href = "style.css">
 </head>
 <body>
-    <form action = ""> <!--Here action attribute is for giving the server location, but we don't have any server so leave it blank.-->
-        <h1>Payment Form</h1>
-        <p>Required fields are followed by *</p>
-        <h2>Contact Information</h2>
-        <!--name should be unique-->
-        <p>Name: *<input type = "text" name = "name" required placeholder="Harsh Pachani"></p>
-        <fieldset > <!--fieldset is for wrapping the elements or giving the border.-->
-            <legend>Gender *</legend> <!--This will give the name to the grouped with fieldset.-->
-            <p>
-                <!--The name in a radio attribute shoud be same as an option, so the name in radiobutton should same in all option.-->
-                Male<input type = "radio" name = "gender" id = "male" required>
-                Female<input type = "radio" name = "gender" id = "female" required>
+    <div class="container">
+        <form action = "" method="get"> <!--Here action attribute is for giving the server location, but we don't have any server so leave it blank.-->
+            <h1 class = "main_heading">Payment Form</h1>
+            <h2>User Information</h2>
+            <!--name should be unique-->
+            <p>Name: *<input type = "text" name = "name" required placeholder="Harsh Pachani"></p>
+            <fieldset > <!--fieldset is for wrapping the elements or giving the border.-->
+                <legend>Gender *</legend> <!--This will give the name to the grouped with fieldset.-->
+                <p>
+                    <!--The name in a radio attribute shoud be same as an option, so the name in radiobutton should same in all option.-->
+                    Male<input type = "radio" name = "gender" id = "male" required>
+                    Female<input type = "radio" name = "gender" id = "female" required>
+                </p>
+            </fieldset>
+            <p>Address: <textarea name = "address" id = "address" cols = "100" rows = "8" placeholder="Enter your Address"></textarea></p>
+            <p>Email: *<input type = "email" name = "email" id = "email" required placeholder="Harsh@gmail.com"></p>
+            <p>Pincode: *<input type = "number" name = "pincode" id = "pincode" required placeholder="123456"></p>
+            <hr>
+            <h2>Payment Information</h2>
+            <p>Card Type: *
+                <select name="card_type" id="card_type" required>
+                    <option value="">--Select a Card Type--</option>
+                    <option value="visa">Visa</option>
+                    <option value="Mastercard">Mastercard</option>
+                    <option value="Rupay">Rupay</option>
+                </select>
             </p>
-        </fieldset>
-        <p>Address: <textarea name = "address" id = "address" cols = "100" rows = "8" placeholder="Enter your Address"></textarea></p>
-        <p>Email: *<input type = "email" name = "email" id = "email" required placeholder="Harsh@gmail.com"></p>
-        <p>Pincode: *<input type = "number" name = "pincode" id = "pincode" required placeholder="123456"></p>
-        <hr>
-        <h2>Payment Information</h2>
-        <p>Card Type: *
-            <select name="card_type" id="card_type" required>
-                <option value="">--Select a Card Type--</option>
-                <option value="visa">Visa</option>
-                <option value="Mastercard">Mastercard</option>
-                <option value="Rupay">Rupay</option>
-            </select>
-        </p>
-        <p>Card Number *<input type="number" name = "Card_number" id = "Card_number" required placeholder="1111-2222-3333-4444"></p>
-        <p>Expiration Date: *<input type="date" name="exp_date" id="exp_date" required></p>
-        <p>CVV: *<input type="password" name = "cvv_num" id = "cvv_num" required placeholder="123"></p>
-        <input type = "submit" value = "PayNow"> <!--this is the button which will show user as a paynow.-->
-    </form>
+            <p>Card Number *<input type="number" name = "Card_number" id = "Card_number" required placeholder="1111-2222-3333-4444"></p>
+            <p>Expiration Date: *<input type="date" name="exp_date" id="exp_date" required></p>
+            <p>CVV: *<input type="password" name = "cvv_num" id = "cvv_num" required placeholder="123"></p>
+
+            <p class = "p">Required fields are followed by *</p>
+
+            <input type = "submit" value = "PayNow"> <!--this is the button which will show user as a paynow.-->
+        </form>
+    </div>
 </body>
 </html>
