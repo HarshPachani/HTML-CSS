@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inheritance</title>
+
+    <style>
+        body{
+            color:blue;
+        }
+
+        .class-1 a{
+            color: inherit; /*This will inherit the color of main(parent) tag which is black{by default or it will change if parent color is changed.}(li or body tag's color is black)*/
+        }
+
+        .class-2{
+            color: initial; /*It is defined for the initial value of every browser and it depend upon different browser's initial value(as of now it is black)*/
+        }
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Defalut <a href = "">Link</a> color</li>
+        <li class = "class-1">Inherited <a href = "">Link</a> color</li>
+        <li class = "class-2">Initial <a href = "">Link</a> color</li>
+        <li class = "class-3">Unset <a href = "">Link</a> color</li>
+    </ul>
+</body>
+</html>
