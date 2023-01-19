@@ -5,14 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Float Property</title>
+    <style>
+        body{
+            margin: 0 auto;
+            max-width: 900px;
+            width: 90%;
+        }
+
+        #box{
+            float: left;
+            margin: 15px;
+            width: 150px;
+            height: 150px;
+            border-radius: 5px;
+            background-color: lightblue;
+            padding: 1em;
+        }
+
+        .special{
+            background-color: lightskyblue;
+            padding: 15px;
+            color: white;
+        }
+
+        .cleared{
+            clear:left; /*This is used for only showing first paragraph next to the image and the second paragraph will be in normal form as it is.(Try it yourself by removing this property)*/
+        }
+    </style>
 </head>
 <body>
     <h1>Float Property</h1>
-    <img src="userImage.jpg" alt="Use Image">
-    <h1>Resume</h1>
+    <img id = "box" src="userImage.jpg" alt="Use Image">
+    <h1 class = "special">Resume</h1>
     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae veniam blanditiis natus sequi fugiat deleniti dolores molestiae neque aspernatur officia excepturi odio praesentium, ad sint id atque, totam officiis consequuntur veritatis nam nisi consectetur, sed laborum? Debitis consequuntur nisi obcaecati aut deserunt! Est numquam ipsum, quisquam alias vero ipsam ut?</p>
 
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae veniam blanditiis natus sequi fugiat deleniti dolores molestiae neque aspernatur officia excepturi odio praesentium, ad sint id atque, totam officiis consequuntur veritatis nam nisi consectetur, sed laborum? Debitis consequuntur nisi obcaecati aut deserunt! Est numquam ipsum, quisquam alias vero ipsam ut?</p>
+    <p class = "cleared">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae veniam blanditiis natus sequi fugiat deleniti dolores molestiae neque aspernatur officia excepturi odio praesentium, ad sint id atque, totam officiis consequuntur veritatis nam nisi consectetur, sed laborum? Debitis consequuntur nisi obcaecati aut deserunt! Est numquam ipsum, quisquam alias vero ipsam ut?</p>
 
     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae veniam blanditiis natus sequi fugiat deleniti dolores molestiae neque aspernatur officia excepturi odio praesentium, ad sint id atque, totam officiis consequuntur veritatis nam nisi consectetur, sed laborum? Debitis consequuntur nisi obcaecati aut deserunt! Est numquam ipsum, quisquam alias vero ipsam ut?</p>
 
