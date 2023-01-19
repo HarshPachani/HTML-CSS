@@ -11,12 +11,27 @@
         }
 
         /*This is the Syntax of Media Queries*/
-        /*It denotes that if the width is 600px then change the color of the body tag content to red.*/
+        /*It denotes that if the width is more than 600px then change the color of the body tag content to red.*/
         @media screen and (width: 600px){
             body{
                 color: red;
             }
         }
+
+        @media (orientation: landscape){
+            body{
+                color: rebeccapurple;
+            }
+        }
+
+        /*Here if the max-width is 600px and orientation is landscape then and only then the color will be blue of body.*/
+        @media screen and (max-width: 600px) and (orientation: landscape){
+            body{
+                color: blue;
+            }
+        }
+
+        @media 
     </style>
 </head>
 <body>
