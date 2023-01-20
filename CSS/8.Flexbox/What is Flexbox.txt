@@ -1,0 +1,9 @@
+CSS Flexbox layout allows you to easily format HTML. Flexbox makes it simple to align items vertically and horizontally using rows and columns. Items will "flex" to different sizes to fill the space. It makes responsive design easier.
+
+Terminologies:
+    . main-axis
+    . main-start | main-end
+    . main size
+    . cross axis
+    . cross-start | cross-end
+    . cross size
