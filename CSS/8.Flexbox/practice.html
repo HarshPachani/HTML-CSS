@@ -8,7 +8,7 @@
 
     <style>
         .container{
-            background-color: cadetblue;
+            background-color: black;
             width: 90%;
             margin-left: auto;
             margin-right: auto;
@@ -29,6 +29,17 @@
             margin: 3px;
             border-radius: 5px;
         }
+
+        .flex-item-in{
+            background-color: white;
+            color: black;
+            margin: 3px;
+            padding: 8px;
+            flex-grow: 1; /*for expending*/
+            border-radius: 5px;
+            font-size: medium;
+            font-family: Arial, Helvetica, sans-serif;
+        }
     </style>
 </head>
 <body>
@@ -38,6 +49,32 @@
             <!-- row-1 and column-1 -->
             <div class="flex-item">
                 <h6>Dabba 1</h6>
+                <!--row-1 of Dabba 1 Starts-->
+                <div class="flex">
+                    <div class="flex-item-in">1</div>
+                    <div class="flex-item-in">2</div>
+                    <div class="flex-item-in">3</div>
+                </div>
+               <!--row-1 of Dabba 1 Ends-->
+
+                <!--row-2 of Dabba 1 Starts-->
+                <div class="flex">
+                    <div class="flex-item-in">1</div>
+                    <div class="flex-item-in">2</div>
+                    <div class="flex-item-in">3</div>
+                    <div class="flex-item-in">4</div>
+                </div>
+                <!--row-2 of Dabba 1 Ends-->
+
+                <!--row-3 of Dabba 1 Starts-->
+                <div class="flex">
+                    <div class="flex-item-in">1</div>
+                    <div class="flex-item-in">2</div>
+                    <div class="flex-item-in">3</div>
+                    <div class="flex-item-in">4</div>
+                    <div class="flex-item-in">5</div>
+                </div>
+                <!--row-3 of Dabba 1 Ends-->
             </div>   
             
             <!-- row-2 and column-2 -->
@@ -69,6 +106,7 @@
         </div>
         <!--row-2 ends-->
 
+        <!--row-3 starts-->
         <div class="flex">
             <div class="flex-item">
                 <h6>Dabba 1</h6>
@@ -86,6 +124,7 @@
                 <h6>Dabba 5</h6>
             </div>
         </div>
+        <!--row-3 ends-->
     </div>
 </body>
 </html>
