@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,21 +6,208 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Challange 5 Flexbox Grid</title>
     <style>
-	.box1, .box2, .box3{
-	   display: flex;
-	   flex-direction: column;
-	   background-color: orange;
-	   height: 50px;
-	   width: 33%;
-	   margin: 10px;
-	}
+	.box, .row-2, .row-3, .box1{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .box1, .box2, .box3{
+        width: 33%;
+        height: 200px;
+        border-radius: 3px;
+        margin: 9px;
+        background-color: orange;
+    }
+
+    .div-1, .div-2, .div-3, .div-4{
+        margin: 2px;
+        width: 25%;
+        height: 40px;
+        background-color: orange;
+        border-radius: 3px;
+    }
+
+    .div{
+        border-radius: 3px;
+        margin: 2px;
+        width: 20%;
+        height: 40px;
+        background-color: orange;
+    }
+
+    .box-1row-1{
+        background-color: whitesmoke;
+        height: 50px;
+        width: 33%;
+        margin: 2px;
+        border-radius: 3px;
+    }
+
+    .box-1row-2{
+        background-color: whitesmoke;
+        height: 50px;
+        width: 25%;
+        margin: 2px;
+        border-radius: 3px;
+    }
     </style>
 </head>
 <body>
     <div class="box">
-        <div class="box1">1</div>
+        <div class="box1">1
+            <div class="box-1row-1">1</div>
+            <div class="box-1row-1">2</div>
+            <div class="box-1row-2">3</div>
+
+            <div>
+                <div class="box-1row-2">1</div>
+                <div class="box-1row-2">2</div>
+                <div class="box-1row-2">3</div>
+                <div class="box-1row-2">4</div>
+            </div>
+        </div>
         <div class="box2">2</div>
-        <div class="box3">3<div>
+        <div class="box3">3</div>
+    </div>
+
+    <div class = "row-2">
+        <div class = "div-1">1</div>
+        <div class = "div-2">2</div>
+        <div class = "div-3">3</div>
+        <div class = "div-4">4</div>
+    </div>
+
+    <div class = "row-3">
+        <div class = "div">1</div>
+        <div class = "div">2</div>
+        <div class = "div">3</div>
+        <div class = "div">3</div>
+        <div class = "div">4</div>
+    </div>
+</body>
+</html> -->
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>FlexBox</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+	<link rel="stylesheet" href="Challange-5.css">
+</head>
+
+<body>
+    <div class="container">
+    <!--row 1 start-->
+        <div class="flex">
+            <div class="flex-item">
+                <h6>Box one</h6>
+                <div class="flex">	
+                    <div class="flex-item-in">1</div>
+                    <div class="flex-item-in">2</div>
+                    <div class="flex-item-in">3</div>
+                </div>
+    <!--3 col end-->
+                <div class="flex">	
+                    <div class="flex-item-in">1</div>
+                    <div class="flex-item-in">2</div>
+                    <div class="flex-item-in">3</div>
+                    <div class="flex-item-in">4</div>
+                </div>
+    <!--4 col end-->
+                <div class="flex">	
+                    <div class="flex-item-in">1</div>
+                    <div class="flex-item-in">2</div>
+                    <div class="flex-item-in">3</div>
+                    <div class="flex-item-in">4</div>
+                    <div class="flex-item-in">5</div>
+                </div>
+                <!--5 col end-->
+            </div>
+            
+            <div class="flex-item">
+            <h6>Box two</h6>
+                
+            </div>
+            
+            <div class="flex-item">
+            <h6>Box three</h6>
+            </div>
+        </div>
+    <!--row 1 end-->
+            
+    <!--row 2 start-->	
+    <div class="flex">
+    <div class="flex-item">
+    <h6>Box one</h6>
+    </div>		
+
+    <div class="flex-item">
+    <h6>Box two</h6>
+    </div>
+        
+    <div class="flex-item">
+    <h6>Box three</h6>
+    </div>
+
+    <div class="flex-item">
+    <h6>Box four</h6>
+    </div>	
+            
+    </div>
+    <!--row 2 end-->
+            
+    <!--row 3 start-->	
+    <div class="flex">	
+    <div class="flex-item">
+    <h6>Box one</h6>
+    </div>
+        
+    <div class="flex-item">
+    <h6>Box two</h6>
+    </div>
+        
+    <div class="flex-item">
+    <h6>Box three</h6>
+    </div>
+        
+    <div class="flex-item">
+    <h6>Box four</h6>
+    </div>
+        
+    <div class="flex-item">
+    <h6>Box five</h6>
+    </div>
+        
+    </div>
+    <!--row 3 end-->		
+            
+    <!--row 4 start-->	
+    <div class="flex">	
+    <div class="flex-item">
+    <h6>Box one</h6>
+    </div>
+        
+    <div class="flex-item">
+    <h6>Box two</h6>
+    </div>
+        
+    <div class="flex-item">
+    <h6>Box three</h6>
+    </div>
+        
+    <div class="flex-item">
+    <h6>Box four</h6>
+    </div>
+        
+    <div class="flex-item">
+    <h6>Box five</h6>
+    </div>
+        
+    <div class="flex-item">
+    <h6>Box six</h6>
+    </div>	
+    </div>
+    <!--row 4 end-->		
     </div>
 </body>
 </html>
