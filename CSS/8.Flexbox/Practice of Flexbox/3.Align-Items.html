@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align-items Property</title>
+    <style>
+        .container{
+            display: flex;
+            /* align-items: center; */
+            align-items: flex-end;
+            /* align-items: stretch; */
+            /* align-items: flex-start; */
+            
+        }
+
+        #one, #two, #three, #four{
+            background-color: aquamarine;
+            margin: 5px;
+            text-align: center;
+        }
+
+        #one{
+            height: 100px;
+            width: 50px;
+        }
+
+        #two{
+            height: 50px;
+            width: 50px;
+        }
+
+        #three{
+            height: 75px;
+            width: 75px;
+        }
+
+        #four{
+            height: 75px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id = "one">1</div>
+        <div id = "two">2</div>
+        <div id = "three">3</div>
+        <div id = "four">4</div>
+    </div>
+</body>
+</html>
