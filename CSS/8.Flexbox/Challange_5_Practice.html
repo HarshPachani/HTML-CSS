@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,22 +8,199 @@
 
     <style>
         .container{
-            display: flex;
-            background-color: aqua;
-            border-radius: 5px;
+            background-color: black;
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
         }
 
-        .flexitems{
-            background-color: chocolate;
-            
+        .flex{
+            display: flex;
+            flex-wrap: wrap;
         }
+
+        .flex-item{
+            background-color: chocolate;
+            flex-grow: 1;
+            margin: 3px;
+            font-size: larger;
+            border-radius: 3px;
+            color: white;
+            padding: 8px;
+        }
+
+
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="flexitems">1</div>
-        <div class="flexitems">2</div>
-        <div class="flexitems">3</div>
+        <div class="flex">
+            <div class="flex-item"><h6>1</h6>
+                <div class="flex">
+                    <div class="flex-item-in">1</div>
+                    <div class="flex-item-in">2</div>
+                    <div class="flex-item-in">3</div>
+                </div>
+
+                
+            </div>
+            <div class="flex-item"><h6>2</h6></div>
+            <div class="flex-item"><h6>3</h6></div>
+        </div>
+
+        <div class="flex">
+            <div class="flex-item">
+                <h6>1</h6>
+            </div>
+            <div class="flex-item">
+                <h6>2</h6>
+            </div>
+            <div class="flex-item">
+                <h6>3</h6>
+            </div>
+            <div class="flex-item">
+                <h6>4</h6>
+            </div>
+        </div>
+
+        <div class="flex">
+            <div class="flex-item">
+                <h6>1</h6>
+            </div>
+            <div class="flex-item">
+                <h6>2</h6>
+            </div>
+            <div class="flex-item">
+                <h6>3</h6>
+            </div>
+            <div class="flex-item">
+                <h6>4</h6>
+            </div>
+            <div class="flex-item">
+                <h6>5</h6>
+            </div>
+        </div>
+    </div>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+	.container{
+		background-color: black;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.flex{
+	       display: flex;
+		flex-wrap: wrap;
+	}
+
+	.flex-item{
+		background-color: chocolate;
+		flex-grow: 1;
+		margin: 3px;
+		padding: 8px;
+		font-size: larger;
+	}
+
+	.flex-item-in{
+		background-color: white;
+		flex-grow: 1;
+		margin: 3px;
+		pading: 8px;
+		border-radius: 5px;
+	}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class = "flex">
+		<div class = "flex-item">
+			<h6>Box-1</h6>
+			<div class = "flex">
+				<div class = "flex-item-in">Mini-box-1</div>
+				<div class = "flex-item-in">MiniBox-2</div>
+				<div class = "flex-item-in">MiniBox-3</div>
+			</div>
+
+			<div class = "flex">
+				<div class = "flex-item-in">Mini-box-1</div>
+				<div class = "flex-item-in">MiniBox-2</div>
+				<div class = "flex-item-in">MiniBox-3</div>
+				<div class = "flex-item-in">MiniBox-4</div>
+			</div>
+
+			<div class = "flex">
+				<div class = "flex-item-in">Mini-box-1</div>
+				<div class = "flex-item-in">MiniBox-2</div>
+				<div class = "flex-item-in">MiniBox-3</div>
+				<div class = "flex-item-in">MiniBox-4</div>
+				<div class = "flex-item-in">MiniBox-5</div>
+			</div>
+
+		</div>
+
+		<div class = "flex-item">
+			<h6>Box-2</h6>
+		</div>
+
+		<div class = "flex-item">
+			<h6>Box-3</h6>
+		</div>
+
+	</div>
+
+	<div class = "flex">
+		<div class = "flex-item">
+			<h6>Box-1</h6>
+		</div>
+
+		<div class = "flex-item">
+			<h6>Box-2</h6>
+		</div>
+
+		<div class = "flex-item">
+			<h6>Box-3</h6>
+		</div>
+		
+		<div class = "flex-item">
+			<h6>Box-4</h6>
+		</div>
+
+	</div>
+
+	<div class = "flex">
+		<div class = "flex-item">
+			<h6>Box-1</h6>
+		</div>
+
+		<div class = "flex-item">
+			<h6>Box-2</h6>
+		</div>
+
+		<div class = "flex-item">
+			<h6>Box-3</h6>
+		</div>
+	
+		<div class = "flex-item">
+			<h6>Box-4</h6>
+		</div>
+
+		<div class = "flex-item">
+			<h6>Box-5</h6>
+		</div>
+
+	</div>
+
     </div>
 </body>
 </html>
