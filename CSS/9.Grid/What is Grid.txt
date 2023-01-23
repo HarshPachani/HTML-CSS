@@ -1,0 +1,10 @@
+CSS Grid Layout is a two-dimensional layout system for the Web. It lets you lay content out in rows and columns, and has many features that make building complex layouts straightforward.
+
+-> A Grid is a collection of horizontal and vertical lines creating a pattern against which we can line up out design elements. They help
+us to create designs where elements don't jump around or change width as we move from page to page, providing greater consistency on our
+website.
+
+-> In short when we change the screen size the elements won't change according to the screen size increasing(won't expand), It will remain as it is.
+
+-> DIFFERENCE BETWEEN FLEXBOX AND GRID LAYOUT 
+Flexbox is One-dimensional and CSS Grid is Two-dimensional
