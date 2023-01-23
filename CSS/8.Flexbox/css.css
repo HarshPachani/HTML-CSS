@@ -29,8 +29,8 @@ h2{
     height: 80%;
     align-self: center;
     text-align: center;
-    box-shadow: 5px 5px 20px rgba(255, 255, 255, 0.644);
-    background-color: rgb(10, 10, 10);
+    box-shadow: 5px 15px 20px rgba(255, 255, 255, 0.644);
+    background-color: orange;
 }
 
 .imagebox1,.imagebox2,.imagebox3{
