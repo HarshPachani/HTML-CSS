@@ -8,9 +8,22 @@
     <style>
         .container{
             display: grid;
-            /*This will devide the boxes into the columns*/
-            /*first column size will 200px, second one's size will 200px and third one's size will 200px*/
-            grid-template-columns: 200px 200px 200px;
+            /*This will divide the boxes into the columns*/
+            /*first column size will 200px, second one's size will 100px and third one's size will 200px*/
+            /* grid-template-columns: 200px 100px 200px; */
+
+            /*with the help of fraction(fr) the columns will divide in equal size or you can also change size like if 2fr is given then the one's size will be double.*/
+            /* grid-template-columns: 1fr 1fr 1fr;
+            OR */
+            /* grid-template-columns: repeat(3, 1fr); *//*This is manually*/
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /*This helps for responsiveness.*/
+            grid-gap: 20px; /*for giving gap to the boxes*/
+            /*grid-auto-rows: 100px; for fix size height.*/
+            grid-auto-rows: minmax(100px, auto); /*100px is minimum height and maximum height is auto*/
+            /* grid-auto-columns: 50px; for fix size width */
+            grid-auto-columns: minmax(50px, auto);/*50px is minimum weight and maximum height is auto*/
+            column-gap: 200px;
+            row-gap: 200px;
         }
 
         .items{
@@ -18,12 +31,42 @@
             border: 3px solid green;
             border-radius: 3px;
         }
+
+        /* #item2{
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 2;
+            grid-column-end: 3;
+        } */
+
+        #item1{
+            /* grid-row-start: 1;
+            grid-row-end: 3; */
+            grid-column-start: 1;
+            grid-column-end: 5;
+        }
+
+        .item-1-container{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);   
+        }
+
+        .nested-item{
+            border: 3px solid greenyellow;
+            border-radius: 3px;
+            background-color: lightyellow;
+        }
+
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="items">Dabba 1</div>
-        <div class="items">Dabba 2</div>
+        <div class="items item-1-container" id = "item1">
+            <div class="nested-item">Dabbe me dabba 1</div>
+            <div class="nested-item">Dabbe me dabba 2</div>
+            <div class="nested-item">Dabbe me dabba 3</div>
+        </div>
+        <div class="items" id = "item2">Dabba 2</div>
         <div class="items">Dabba 3</div>
         <div class="items">Dabba 4</div>
         <div class="items">Dabba 5</div>
