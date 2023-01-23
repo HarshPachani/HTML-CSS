@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .main{
+            margin: 30px;
+            box-shadow: .4em .4em 2em #45a29e;
+            padding: 10px;
+        }        
+
+        .container{
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-gap: 15px;
+            height: 650px;
+        }
+
+        .child{
+            display: grid;
+            grid-gap: 15px;
+            text-align: center;
+            color: white;
+        }
+        .child div:hover{
+            background-color: greenyellow;
+            text-align: end;
+        }
+
+        .items{
+            background-color: #a8ec9b;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="child">
+                <div class="items" id="b1">1</div>
+            </div>
+
+            <div class="child">
+                <div class="items" id="b2">2</div>
+                <div class="items" id="b3">3</div>
+            </div>
+
+            <div class="child">
+                <div class="items" id="b4">4</div>
+                <div class="items" id="b5">5</div>
+                <div class="items" id="b6">6</div>
+            </div>
+
+            <div class="child">
+                <div class="items" id="b7">7</div>
+                <div class="items" id="b8">8</div>
+                <div class="items" id="b9">9</div>
+                <div class="items" id="b10">10</div>
+            </div>
+
+            <div class="child">
+                <div class="items" id="b11">11</div>
+                <div class="items" id="b12">12</div>
+                <div class="items" id="b13">13</div>
+                <div class="items" id="b14">14</div>
+                <div class="items" id="b15">15</div>
+                <div class="items" id="b16">16</div>
+            </div>
+
+            <div class="child">
+                <div class="items" id="b17">17</div>
+                <div class="items" id="b18">18</div>
+                <div class="items" id="b19">19</div>
+                <div class="items" id="b20">20</div>
+                <div class="items" id="b21">21</div>
+                <div class="items" id="b22">22</div>
+                <div class="items" id="b23">23</div>
+                <div class="items" id="b24">24</div>
+                <div class="items" id="b25">25</div>
+                <div class="items" id="b26">26</div>
+                <div class="items" id="b27">27</div>
+                <div class="items" id="b28">28</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
