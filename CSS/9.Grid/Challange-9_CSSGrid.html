@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Challange-9</title>
+
+    <style>
+        .container{
+            height: 1000px;
+            display: grid;
+            grid-gap: 15px;
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        .nav, .header, .article, .ads, .footer{
+            grid-gap: 15px;
+            border-radius: 5px;
+            background-color: yellow;
+        }
+
+        .nav{
+            grid-row-start: 1;
+            grid-row-end: 4;
+        }
+
+        .header, .footer{
+            grid-column-start: 2;
+            grid-column-end: 5;
+        }
+
+        .article{
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+
+        .ads{
+            grid-column-start: 4;
+            grid-column-end: 5;
+        }
+    
+        .nav:hover, .header:hover, .article:hover, .ads:hover, .footer:hover{
+            background-color: aqua;
+            box-shadow : 5px 5px 20px black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">Nav</div>
+        <div class="header">Header</div>
+        <div class="article">Article</div>
+        <div class="ads">Ads</div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+</html>
