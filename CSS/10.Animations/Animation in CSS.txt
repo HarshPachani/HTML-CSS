@@ -1,0 +1,9 @@
+There are two types in CSS for Animations.
+i. Transitions
+ii. Animation
+
+i.) Transitions
+-> It's like defining how much time will be a color changing can happen?
+
+Transition Properties:
+Syntax: transition: property-name Time-duration Transition-timing-function Delay-time.
