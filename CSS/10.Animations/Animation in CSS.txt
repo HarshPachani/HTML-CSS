@@ -6,4 +6,5 @@ i.) Transitions
 -> It's like defining how much time will be a color changing can happen?
 
 Transition Properties:
-Syntax: transition: property-name Time-duration Transition-timing-function Delay-time.
+Syntax: transition: transition-property transition-duration Transition-timing-function transition-delay.
+                                            time                timing-function             delay-time.
