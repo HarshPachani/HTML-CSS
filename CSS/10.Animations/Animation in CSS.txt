@@ -8,3 +8,8 @@ i.) Transitions
 Transition Properties:
 Syntax: transition: transition-property transition-duration Transition-timing-function transition-delay.
                                             time                timing-function             delay-time.
+
+Animation Properties:
+There are of two types: style, and keyframe
+for style we use animation property
+for keyframe we use @keyframes
