@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling form With HTML & CSS</title>
+</head>
+<body>
+    <div class="main">
+        <h3>Payment Form</h3>
+        <h4>User Information</h4>
+        <p>Name: </p>
+        <input type = "text" id = "name" placeholder="Harsh Pachani*" required>
+
+        <fieldset>
+            <legend>Gender *</legend>
+            <p>
+                Male<input type = "radio" name = "radio" value = "male" required>
+                Female<input type = "radio" name = "radio" value = "female" required>
+            </p>
+        </fieldset>
+
+        <p>Address: </p>
+        <textarea placeholder="Enter your Address" rows = 5 cols = 150></textarea>
+        
+        <p>Email: *<input type = "email" name = "email" required placeholder="EX: Harsh@gmail.com"></p>
+        <p>Pincode: *<input type = "number" required placeholder="Ex: 123456" name = "pincode"></p>
+        
+        <br>
+
+        <h3>Payment Information</h3>
+        <p>Card Type: *
+            <select required>
+                <option value="">---Select a Card Type---</option>
+                <option value="Visa">Visa</option>
+                <option value="Mastercard">Mastercard</option>
+                <option value="Rupay">Rupay</option>
+            </select>
+        </p>
+
+        <p>Card Number: *<input type = "number" name = "number" value="number" required placeholder="Ex: 1111-2222-3333-4444"></p>
+        <p>Expiration Date: *<input type = "date" value = "date" name = "date" required></p>
+        <p>CVV: *<input type = "password" required placeholder="Ex: 123" name = "cvv"></p>        
+        <p>Required fields are followed by *</p>
+        <input type="submit" value="PayNow">
+    </div>
+</body>
+</html>
