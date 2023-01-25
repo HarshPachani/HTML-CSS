@@ -9,6 +9,7 @@ body{
 
 div{
     width: 70%;
+    /*Margin is used to align a box into center automatically.*/
     margin: 60px auto;
     padding: 20px;
     background: #eee;
