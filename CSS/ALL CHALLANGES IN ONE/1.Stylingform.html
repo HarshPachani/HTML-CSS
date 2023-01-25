@@ -5,45 +5,106 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Styling form With HTML & CSS</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            margin: 15px 30px;
+            padding: 8px;
+            font-size: 17px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+           
+        }
+        .main{
+            background-color: #f2f2ff;
+            padding: 5px 20px 15px 20px;
+            border: 1px solid lightgray;
+            border-radius: 5px;
+        }
+        h2{
+            text-align: center;
+        }
+
+        input[type = "text"],
+        input[type = "number"],
+        input[type = "email"],
+        input[type = "password"],
+        input[type = "date"],
+        select,
+        textarea{
+            width: 100%;
+            padding: 10px;
+            border: 2px solid lightgrey;
+            border-radius: 5px;
+            margin: 5px;
+        }
+
+        fieldset{
+            background-color: #fff;
+            border: 1px solid #ccc;
+        }
+
+        .instruction{
+            text-align: end;
+        }
+
+        input[type = "submit"]{
+            width: 100%;
+            border: none;
+            padding: 12px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            background-color:  aqua;
+        }
+
+        input[type = "submit"]:hover{
+            background-color: greenyellow;
+        }
+    </style>
 </head>
 <body>
     <div class="main">
-        <h3>Payment Form</h3>
-        <h4>User Information</h4>
-        <p>Name: </p>
-        <input type = "text" id = "name" placeholder="Harsh Pachani*" required>
+        <form action="">
+            <h2>Payment Form</h2>
+            <h3>User Information</h3>
+            <p>Name: </p>
+            <input type = "text" id = "name" placeholder="Harsh Pachani*" required>
 
-        <fieldset>
-            <legend>Gender *</legend>
-            <p>
-                Male<input type = "radio" name = "radio" value = "male" required>
-                Female<input type = "radio" name = "radio" value = "female" required>
+            <fieldset>
+                <legend>Gender *</legend>
+                <p>
+                    Male<input type = "radio" name = "radio" value = "male" required>
+                    Female<input type = "radio" name = "radio" value = "female" required>
+                </p>
+            </fieldset>
+
+            <p>Address: </p>
+            <textarea placeholder="Enter your Address" rows = 5 cols = 150></textarea>
+            
+            <p>Email: *<input type = "email" name = "email" required placeholder="EX: Harsh@gmail.com"></p>
+            <p>Pincode: *<input type = "number" required placeholder="Ex: 123456" name = "pincode"></p>
+            
+            <br>
+
+            <h3>Payment Information</h3>
+            <p>Card Type: *
+                <select required>
+                    <option value="">---Select a Card Type---</option>
+                    <option value="Visa">Visa</option>
+                    <option value="Mastercard">Mastercard</option>
+                    <option value="Rupay">Rupay</option>
+                </select>
             </p>
-        </fieldset>
 
-        <p>Address: </p>
-        <textarea placeholder="Enter your Address" rows = 5 cols = 150></textarea>
-        
-        <p>Email: *<input type = "email" name = "email" required placeholder="EX: Harsh@gmail.com"></p>
-        <p>Pincode: *<input type = "number" required placeholder="Ex: 123456" name = "pincode"></p>
-        
-        <br>
-
-        <h3>Payment Information</h3>
-        <p>Card Type: *
-            <select required>
-                <option value="">---Select a Card Type---</option>
-                <option value="Visa">Visa</option>
-                <option value="Mastercard">Mastercard</option>
-                <option value="Rupay">Rupay</option>
-            </select>
-        </p>
-
-        <p>Card Number: *<input type = "number" name = "number" value="number" required placeholder="Ex: 1111-2222-3333-4444"></p>
-        <p>Expiration Date: *<input type = "date" value = "date" name = "date" required></p>
-        <p>CVV: *<input type = "password" required placeholder="Ex: 123" name = "cvv"></p>        
-        <p>Required fields are followed by *</p>
-        <input type="submit" value="PayNow">
+            <p>Card Number: *<input type = "number" name = "number" value="number" required placeholder="Ex: 1111-2222-3333-4444"></p>
+            <p>Expiration Date: *<input type = "date" value = "date" name = "date" required></p>
+            <p>CVV: *<input type = "password" required placeholder="Ex: 123" name = "cvv"></p>        
+            <p class="instruction">Required fields are followed by *</p>
+            <input type="submit" value="PayNow">
+        </form>
     </div>
 </body>
 </html>
