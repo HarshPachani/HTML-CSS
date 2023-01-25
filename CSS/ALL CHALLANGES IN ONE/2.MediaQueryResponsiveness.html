@@ -22,6 +22,62 @@
             /*Margin is used to align a box into center automatically.*/
             margin: 60px auto;
             background-color: #eee;
+            overflow:hidden;
+        }
+
+        .box1{
+            float: left;
+            color: red;
+            width: 25%;
+            margin: 10 0 0 0;
+            padding: 0 0 0 0;
+            background-color: rgb(70, 70, 70);
+        }
+        .box2{
+            float: left;
+            color: red;
+            width: 25%;
+            margin: 10 0 0 0;
+            padding: 0 0 0 0;
+            background-color: rgb(82, 81, 81);
+        }
+        .box3{
+            float: left;
+            color: red;
+            width: 25%;
+            margin: 10 0 0 0;
+            padding: 0 0 0 0;
+            background-color: rgb(110, 106, 106);
+
+        }
+        .box4{
+            float: left;
+            color: red;
+            width: 25%;
+            margin: 10 0 0 0;
+            padding: 0 0 0 0;
+            background-color: rgb(145, 141, 141);
+        }
+
+        h3{
+            margin: 10px;
+            padding: 10px;
+        }
+        p{
+            margin: 10px;
+            padding: 10px;
+        }
+
+        @media screen and (min-width: 100px) and (max-width: 300px){
+            .box1, .box2, .box3, .box4{
+                width: 100%;
+            }
+        }
+
+        @media screen and (min-width: 301px) and (max-width: 600px){
+            .box1, .box2, .box3, .box4{
+                width: 50%;
+            }
         }
     </style>
 </head>
@@ -33,17 +89,17 @@
             <p>I am Aman</p>
         </div>
 
-        <div class="box1">
+        <div class="box2">
             <h3>Name2</h3>
             <p>I am Dev</p>
         </div>
 
-        <div class="box1">
+        <div class="box3">
             <h3>Name3</h3>
             <p>I am Neha</p>
         </div>
 
-        <div class="box1">
+        <div class="box4">
             <h3>Name4</h3>
             <p>I am Yash</p>
         </div>
