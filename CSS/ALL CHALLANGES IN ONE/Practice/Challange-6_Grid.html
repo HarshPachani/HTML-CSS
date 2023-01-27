@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challange-6 Grid Practice</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(6, 1fr); 
+            box-shadow: 15px 15px 20px 1px black;
+            height: 650px;
+            grid-gap: 15px;
+        }
+
+        .columns{
+            display: grid;
+            text-align: center;
+            grid-gap: 15px;
+        }
+
+        .item{
+            background-color: aqua;
+        }
+
+        .item:hover{
+            background-color: greenyellow;
+            cursor: pointer;           
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="columns">
+            <div class="item">1</div>
+        </div>
+        <div class="columns">
+            <div class="item">1</div>
+            <div class="item">2</div>
+        </div>
+        <div class="columns">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+        </div>
+        <div class="columns">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+        </div>
+        <div class="columns">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+        </div>
+        <div class="columns">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item">7</div>
+            <div class="item">8</div>
+            <div class="item">9</div>
+            <div class="item">10</div>
+            <div class="item">11</div>
+            <div class="item">12</div>
+        </div>
+    </div>
+</body>
+</html>
