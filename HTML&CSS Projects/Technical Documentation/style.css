@@ -1,26 +1,39 @@
-*{
-    box-sizing: border-box;
-}
-
 .container{
     display: grid;
     grid-template-columns: minmax(300px, auto)1fr;
-    grid-template-areas: "docMenu docTutorial";
+    grid-template-areas: "navBar mainContent";
+    grid-gap: 20px;
 }
 
-.docMenu{
-    grid-area: "docMenu";
-    display: flex;
-    flex-direction: column;
+nav#navBar{
+    grid-area: navBar;
+    position: fixed;
 }
 
-div a{
+
+
+nav#navBar a{
+    display: block;
     text-decoration: none;
     border: 1px solid black;
-    margin: 2px;
-    width: 60%;
+    color: black;
+    margin: 10px 0px; /*Here 10px is for top and bottom margin and 0px is for left and right margin*/
+    padding: 5px;
 }
 
-.docTutorial{
-    grid-area: "docTutorial";
+main#main-doc{
+    grid-area: mainContent;
+}
+
+header{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+code{
+    background-color: #ccc;
+    display: block;
+    padding: 20px;
+    /* height: 50px;
+    overflow: scroll; */
 }
