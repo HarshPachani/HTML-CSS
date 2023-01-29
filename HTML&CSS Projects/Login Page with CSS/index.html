@@ -7,6 +7,40 @@
     <title>Login Page</title>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="login-in-card">
+            <div class="image-logo">
+                <img src="logo.png" alt="Logo">
+            </div>
+
+            <header class = "login-card-header">
+                <h1>SignIn</h1>
+                <div>Please login to use the Platform</div>
+            </header>
+
+            <form action="" class = "login-card-form">
+                <div class="form-item">
+                    <input type="text" placeholder="Enter Email" id = "emailForm" required autofocus>
+                </div>
+                <div class="form-item">
+                    <input type="text" placeholder="Enter Password" id = "passwordForm" required>
+                </div>
+
+                <div class="form-item-other">
+                    <div class="checkbox">
+                        <input type="checkbox" id = "rememberMeCheckbox" checked>
+                        <label for="rememberMeCheckbox">Remember Me</label>
+                    </div>
+                    <a href="#">Forgot Password?</a>
+                </div>
+
+                <button type = "submit">Sign In</button>
+            </form>
+
+            <div class="footer">
+                Don't have an account? <a href = "#">Create a free Account.</a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
