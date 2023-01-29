@@ -74,7 +74,7 @@ body{
     position: relative;
 }
 
-.login-page-form .form-item{
+.login-page-form .form-item .form-item-icon{
     position: absolute;
     top: .82rem;
     left: 1.4rem;
@@ -139,7 +139,7 @@ body{
     cursor: pointer; 
 }
 
-@media (min-width: 768px){ /*If screen's size is more than 768px then this condition will be applied.*/
+@media (max-width: 768px){ /*If screen's size is less than 768px then this condition will be applied.*/
     body{
         padding: 2rem 0;
     }
