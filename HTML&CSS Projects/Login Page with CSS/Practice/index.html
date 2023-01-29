@@ -20,16 +20,25 @@
             </header>
 
             <form action="" class = "login-page-form">
-                <div class="email">
+                <div class="form-item">
                     <span>email</span>
                     <input type="email" class = "email-input" placeholder = "Enter Email" required>
                 </div>
 
-                <div class="password">
+                <div class="form-item">
                     <span>password</span>
                     <input type="password" class="password-input" placeholder="Enter Password" required>
                 </div>
-                
+            
+
+                <div class="login-item-other">
+                    <div class="checkbox">
+                        <input type="checkbox" id = "rememberMeCheckbox" checked>
+                        <label for="rememberMeCheckbox">Remember Me</label>
+                    </div>
+                    <a href="#">Forgot Password?</a>
+                </div>
+
                 <button type = "submit">Sign In</button>    
             </form>
 
