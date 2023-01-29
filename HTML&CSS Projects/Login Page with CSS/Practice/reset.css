@@ -1,0 +1,21 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+a, button{
+    cursor: revert;
+}
+
+img{
+    max-width: 100%;
+}
+
+::placeholder{
+    color: unset;
+}
+
+span{
+    color: white;
+}
