@@ -1,4 +1,4 @@
-body, html{
+body{
     height: 100%;
     background: #222222;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -9,8 +9,8 @@ body, html{
     position: relative;
     margin: 40px auto;
     height: auto;
-    width: 500px;
     padding: 20px;
+    width: 500px;
 }
 
 h2{
@@ -34,7 +34,7 @@ ul li{
     border-bottom: 1px solid #333;
 }
 
-ul li input[type = "radio"]{
+ul li input[type="radio"]{
     position: absolute;
     visibility: hidden;
 }
@@ -93,9 +93,9 @@ input[type="radio"]:checked ~ .check{
 }
 
 input[type=radio]:checked ~ .check::before{
-  background: #0DFF92;
+    backgound: #0DFF92;
 }
 
-input[type=radio]:checked ~ label{
-  color: #0DFF92;
+input[type="radio"]:checked ~ label{
+    color: #0DFF92;
 }
