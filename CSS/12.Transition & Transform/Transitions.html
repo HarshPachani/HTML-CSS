@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example of Transitions</title>
+
+    <style>
+        .wrap{
+            margin: 50px;
+        }
+
+        .container{
+            display: inline-block;
+            width: 300px;
+        }
+
+        h1{
+            color: lightgrey; 
+            font-family: lato;
+            font-size: 20px;
+            font-weight: 200;
+            padding: 20px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .box{
+            height: 40px;
+            width: 80px;
+            margin: 50px auto;
+            border-radius: 5px;
+        }
+
+        .wrap:hover{
+            transform: scale(2);
+        }
+
+        .box1{
+            background: mediumaquamarine;
+        }
+
+        .box2{
+            background: #2b3f53;
+            transition: all 1s;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="container">
+            <h1>Without Transition</h1>
+            <div class="box1 box"></div>
+        </div>
+
+        <div class="container">
+            <h1>With Transition</h1>
+            <div class="box2 box"></div>
+        </div>
+    </div>
+</body>
+</html>
