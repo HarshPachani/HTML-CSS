@@ -5,8 +5,97 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            background: black;
+        }
+
+        .toggleMenu{
+            display: block;
+            position: relative;
+            top: 50px;
+            left: 50px;
+
+            z-index: 1;
+            
+        }
+
+        .toggleMenu a{
+            text-decoration: none;
+            color: black;
+
+            transition: color ease 0.3s;
+        }
+
+        .toggleMenu a:hover{
+            color: red;
+        }
+
+        .toggleMenu input{
+            display: block;
+            width: 40px;
+            height: 32px;
+            position: absolute;
+
+            top: -7px;
+            left: -5px;
+            cursor: pointer;
+
+            opacity: 0;
+            z-index: -2;
+        }
+
+        .toggleMenu span{
+            display: block;
+
+            background: white;
+            width: 33px;
+            height: 4px;
+            border-radius: 3px;
+            margin-bottom: 5px;
+            position: relative;
+            z-index: 1;
+
+            transform: 4px 0px;
+            transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0)
+                        background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+                        opacity 0.55s ease;
+        }
+
+        .toggleMenu span:first-child(){
+            transform-origin: 0% 0%;
+        }
+
+        .toggleMenu span:nth-last-child(2){
+            transform-origin: 0% 100%;
+        }
+
+        .toggleMenu input:checked ~ span {
+            opacity: 1;
+            transform: rotate(45deg);
+            background: #232323;            
+        }
+        
+    </style>
 </head>
 <body>
-    
+    <nav>
+        <div class="toggleMenu">
+            <input type="checkbox" />
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <ul id = "menu">
+                <a href="#"><li>Home</li></a>
+                <a href="#"><li>About</li></a>
+                <a href="#"><li>Info</li></a>
+                <a href="#"><li>Contact</li></a>
+                <a href="#"><li>Show me More</li></a>
+            </ul>
+
+        </div>
+    </nav>
 </body>
 </html>
