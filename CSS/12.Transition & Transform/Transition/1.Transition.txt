@@ -1,0 +1,52 @@
+There are two properties that are required in order for the transition to take effect:
+    1. transition-property
+    2. transition-duration
+
+Transition Shorthand
+Each transition property can be defined individually, but for cleaner and faster code, it's recommanded that you use the transition shorthand.
+
+Here's the full shorthand sequence.
+div{
+    transition: [property] [duration] [timing-function] [delay];
+}
+
+1. transition-property(required):
+    The transition-property specifies the CSS property where the transition will be applied. You may apply a transition to an individual property
+    (e.g., background-color or transform) or all properties in the rule-set(i.e., all).
+    ex: div{
+        transition-property: all; //Apply for all the properties
+        transition-property: transform;
+    }
+
+2. transition-duration(required):
+    The transition-duration property specifies the time span of the transition. You can specify in seconds or milliseconds.
+    ex: div{
+        transition-duration: 3s;
+    }
+
+Shorthand Example of transition-duration:
+div{
+    transition: all 3s;
+}
+
+3. transition-timing(optional):
+    The transition-timing function property allows you to define the speed of the transition over the duration. The default timing is ease,
+    which starts out slow, quickly speeds up, and then slows down at the end. 
+    The other timing options are: linear, ease, ease-in, ease-out and ease-in-out.
+    ex: div{
+        transition-timing-function: ease-in-out;
+    }
+
+Shorthand Example of transition-timing-function:
+div{
+    transition: all 3s ease-in-out;
+}
+
+4. transition-delay(optional):
+    The transition-delay property allows you to specify when the transform will start. By default, the transition starts as soon as it is triggered
+    (e.g., on mouse hover). However, if you want to transition to start after it is triggered you can use the transition delay property.
+
+Shorthand Example of transition-delay:
+    div{
+        transition: all 3s 1s;
+    }
